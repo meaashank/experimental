@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.prism.lib.media.ui.widget.dock.FloatingRoundDockLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/floating_dock_layout"
-    android:background="@drawable/floating_player_background"
-    android:layout_width="80dp"
-    android:layout_height="80dp"/>

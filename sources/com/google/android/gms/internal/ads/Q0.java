@@ -1,8 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* JADX INFO: loaded from: classes4.dex */
-public final /* synthetic */ class Q0 {
-    public static int a(zzfdi zzfdiVar) {
-        throw null;
-    }
-}

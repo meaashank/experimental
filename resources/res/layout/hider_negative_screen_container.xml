@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.prism.hider.negativescreen.MinusOneScreenView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/negative_screen_container"
-    android:visibility="invisible"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:contentDescription="@string/negative_screen_title"/>
