@@ -1,0 +1,6 @@
+package K3;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface b<T> {
+    int a(T t10);
+}

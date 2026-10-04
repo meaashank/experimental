@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/desktop_tab_height">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tabs_list"
+        android:scrollbars="none"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/desktop_tab_height"
+        app:layout_constraintEnd_toStartOf="@+id/new_tab_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/new_tab_button"
+        android:background="?attr/actionBarItemBackground"
+        android:layout_width="@dimen/desktop_tab_height"
+        android:layout_height="@dimen/desktop_tab_height"
+        android:contentDescription="@string/action_new_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_plus"/>
+</merge>

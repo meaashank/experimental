@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:platform="http://schemas.android.com/apk/res-auto">
+    <font
+        platform:font="@font/josefin_sans_regular"
+        platform:fontStyle="normal"
+        platform:fontWeight="400"/>
+    <font
+        platform:font="@font/josefin_sans_italic"
+        platform:fontStyle="italic"
+        platform:fontWeight="400"/>
+</font-family>

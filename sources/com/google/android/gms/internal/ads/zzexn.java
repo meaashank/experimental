@@ -1,0 +1,68 @@
+package com.google.android.gms.internal.ads;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.BatteryManager;
+import android.os.Build;
+import com.google.common.util.concurrent.ListenableFuture;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import java.util.concurrent.Callable;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zzexn implements zzfdi {
+    private final zzhdi zza;
+    private final Context zzb;
+
+    public zzexn(zzhdi zzhdiVar, Context context) {
+        this.zza = zzhdiVar;
+        this.zzb = context;
+    }
+
+    @SuppressLint({"UnprotectedReceiver"})
+    private final Intent zzd() {
+        IntentFilter intentFilter = new IntentFilter("android.intent.action.BATTERY_CHANGED");
+        return (!((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zzmF)).booleanValue() || Build.VERSION.SDK_INT < 33) ? this.zzb.registerReceiver(null, intentFilter) : this.zzb.registerReceiver(null, intentFilter, 4);
+    }
+
+    private static final boolean zze(Intent intent) {
+        if (intent == null) {
+            return false;
+        }
+        int intExtra = intent.getIntExtra("status", -1);
+        return intExtra == 2 || intExtra == 5;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    @SuppressLint({"UnprotectedReceiver"})
+    public final ListenableFuture zza() {
+        return this.zza.zzc(new Callable() { // from class: com.google.android.gms.internal.ads.zzexm
+            @Override // java.util.concurrent.Callable
+            public final /* synthetic */ Object call() {
+                return this.zza.zzc();
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    public final int zzb() {
+        return 14;
+    }
+
+    public final /* synthetic */ zzexo zzc() {
+        double intExtra;
+        boolean zIsCharging;
+        if (((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zznI)).booleanValue()) {
+            BatteryManager batteryManager = (BatteryManager) this.zzb.getSystemService("batterymanager");
+            intExtra = batteryManager != null ? ((double) batteryManager.getIntProperty(4)) / 100.0d : -1.0d;
+            zIsCharging = batteryManager != null ? batteryManager.isCharging() : zze(zzd());
+        } else {
+            Intent intentZzd = zzd();
+            boolean zZze = zze(intentZzd);
+            intExtra = intentZzd != null ? ((double) intentZzd.getIntExtra(FirebaseAnalytics.Param.LEVEL, -1)) / ((double) intentZzd.getIntExtra("scale", -1)) : -1.0d;
+            zIsCharging = zZze;
+        }
+        return new zzexo(intExtra, zIsCharging);
+    }
+}

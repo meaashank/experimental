@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s-ში %2$d შეტყობინებაა</item>
+        <item quantity="other">%1$s-ში %2$d შეტყობინებაა</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ახალი შეტყობინება</item>
+        <item quantity="other">%d ახალი შეტყობინება</item>
+    </plurals>
+</resources>

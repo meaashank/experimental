@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s, tem %2$d notificação.</item>
+        <item quantity="other">%1$s, tem %2$d notificações.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nova notificação</item>
+        <item quantity="other">%d novas notificações</item>
+    </plurals>
+</resources>

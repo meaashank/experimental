@@ -1,0 +1,37 @@
+package com.bumptech.glide.load.resource.bitmap;
+
+import android.graphics.Bitmap;
+import androidx.annotation.NonNull;
+import g3.InterfaceC4444b;
+import java.security.MessageDigest;
+
+/* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.n, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes2.dex */
+public class C3102n extends AbstractC3097i {
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public static final String f139949c = "com.bumptech.glide.load.resource.bitmap.CenterCrop";
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public static final byte[] f139950d = f139949c.getBytes(InterfaceC4444b.f202232b);
+
+    @Override // g3.InterfaceC4444b
+    public void b(@NonNull MessageDigest messageDigest) {
+        messageDigest.update(f139950d);
+    }
+
+    @Override // com.bumptech.glide.load.resource.bitmap.AbstractC3097i
+    public Bitmap c(@NonNull com.bumptech.glide.load.engine.bitmap_recycle.e eVar, @NonNull Bitmap bitmap, int i10, int i11) {
+        return K.b(eVar, bitmap, i10, i11);
+    }
+
+    @Override // g3.InterfaceC4444b
+    public boolean equals(Object obj) {
+        return obj instanceof C3102n;
+    }
+
+    @Override // g3.InterfaceC4444b
+    public int hashCode() {
+        return -599754482;
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="@dimen/dialog_max_size">
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@+id/dialog_title"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingTop="@dimen/material_grid_margin"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:paddingBottom="@dimen/material_grid_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="?attr/listChoiceBackgroundIndicator"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:overScrollMode="ifContentScrolls"/>
+</LinearLayout>

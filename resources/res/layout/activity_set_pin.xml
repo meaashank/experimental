@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/set_pin_root"
+    android:background="@color/layout_set_pin_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/set_pin_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <include layout="@layout/layout_setpin_pad_numeric"/>
+    </LinearLayout>
+</LinearLayout>

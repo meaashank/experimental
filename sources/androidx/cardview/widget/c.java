@@ -1,0 +1,145 @@
+package androidx.cardview.widget;
+
+import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import androidx.annotation.Nullable;
+import androidx.cardview.widget.g;
+
+/* JADX INFO: loaded from: classes.dex */
+public class c implements e {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final RectF f86638a = new RectF();
+
+    public class a implements g.a {
+        public a() {
+        }
+
+        @Override // androidx.cardview.widget.g.a
+        public void a(Canvas canvas, RectF rectF, float f10, Paint paint) {
+            float f11 = 2.0f * f10;
+            float fWidth = (rectF.width() - f11) - 1.0f;
+            float fHeight = (rectF.height() - f11) - 1.0f;
+            if (f10 >= 1.0f) {
+                float f12 = f10 + 0.5f;
+                float f13 = -f12;
+                c.this.f86638a.set(f13, f13, f12, f12);
+                int iSave = canvas.save();
+                canvas.translate(rectF.left + f12, rectF.top + f12);
+                canvas.drawArc(c.this.f86638a, 180.0f, 90.0f, true, paint);
+                canvas.translate(fWidth, 0.0f);
+                canvas.rotate(90.0f);
+                canvas.drawArc(c.this.f86638a, 180.0f, 90.0f, true, paint);
+                canvas.translate(fHeight, 0.0f);
+                canvas.rotate(90.0f);
+                canvas.drawArc(c.this.f86638a, 180.0f, 90.0f, true, paint);
+                canvas.translate(fWidth, 0.0f);
+                canvas.rotate(90.0f);
+                canvas.drawArc(c.this.f86638a, 180.0f, 90.0f, true, paint);
+                canvas.restoreToCount(iSave);
+                float f14 = (rectF.left + f12) - 1.0f;
+                float f15 = rectF.top;
+                canvas.drawRect(f14, f15, (rectF.right - f12) + 1.0f, f15 + f12, paint);
+                float f16 = (rectF.left + f12) - 1.0f;
+                float f17 = rectF.bottom;
+                canvas.drawRect(f16, f17 - f12, (rectF.right - f12) + 1.0f, f17, paint);
+            }
+            canvas.drawRect(rectF.left, rectF.top + f10, rectF.right, rectF.bottom - f10, paint);
+        }
+    }
+
+    @Override // androidx.cardview.widget.e
+    public float a(d dVar) {
+        return ((g) dVar.d()).g();
+    }
+
+    @Override // androidx.cardview.widget.e
+    public float b(d dVar) {
+        return ((g) dVar.d()).i();
+    }
+
+    @Override // androidx.cardview.widget.e
+    public float c(d dVar) {
+        return ((g) dVar.d()).j();
+    }
+
+    @Override // androidx.cardview.widget.e
+    public float d(d dVar) {
+        return ((g) dVar.d()).l();
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void e(d dVar) {
+        Rect rect = new Rect();
+        ((g) dVar.d()).h(rect);
+        dVar.b((int) Math.ceil(f(dVar)), (int) Math.ceil(c(dVar)));
+        dVar.setShadowPadding(rect.left, rect.top, rect.right, rect.bottom);
+    }
+
+    @Override // androidx.cardview.widget.e
+    public float f(d dVar) {
+        return ((g) dVar.d()).k();
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void g(d dVar, float f10) {
+        ((g) dVar.d()).q(f10);
+        e(dVar);
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void h(d dVar, float f10) {
+        ((g) dVar.d()).p(f10);
+        e(dVar);
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void i(d dVar, float f10) {
+        ((g) dVar.d()).r(f10);
+    }
+
+    @Override // androidx.cardview.widget.e
+    public ColorStateList j(d dVar) {
+        return ((g) dVar.d()).f();
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void k(d dVar) {
+        ((g) dVar.d()).m(dVar.e());
+        e(dVar);
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void l(d dVar, Context context, ColorStateList colorStateList, float f10, float f11, float f12) {
+        g gVarP = p(context, colorStateList, f10, f11, f12);
+        gVarP.m(dVar.e());
+        dVar.c(gVarP);
+        e(dVar);
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void m(d dVar) {
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void n() {
+        g.f86653s = new a();
+    }
+
+    @Override // androidx.cardview.widget.e
+    public void o(d dVar, @Nullable ColorStateList colorStateList) {
+        ((g) dVar.d()).o(colorStateList);
+    }
+
+    public final g p(Context context, ColorStateList colorStateList, float f10, float f11, float f12) {
+        return new g(context.getResources(), colorStateList, f10, f11, f12);
+    }
+
+    public final g q(d dVar) {
+        return (g) dVar.d();
+    }
+}

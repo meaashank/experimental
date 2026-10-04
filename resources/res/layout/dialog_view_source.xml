@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.github.ahmadaghazadeh.editor.widget.CodeEditor
+        android:id="@+id/dialog_multi_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        bind:isReadOnly="false"
+        bind:isShowExtendedKeyboard="false"
+        bind:lang="html"/>
+</LinearLayout>

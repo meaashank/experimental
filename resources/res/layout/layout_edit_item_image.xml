@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardPreventCornerOverlap="false">
+    <ImageView
+        android:id="@+id/iv_album_content_image_ed"
+        android:background="#96149b60"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_gravity="top"
+        android:id="@+id/cover_area_selected"
+        android:background="?attr/colorMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_photo_selected_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_check"/>
+</androidx.cardview.widget.CardView>

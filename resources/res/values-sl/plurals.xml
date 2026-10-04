@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">Aplikacija %1$s ima %2$d obvestilo</item>
+        <item quantity="two">Aplikacija %1$s ima %2$d obvestili</item>
+        <item quantity="few">Aplikacija %1$s ima %2$d obvestila</item>
+        <item quantity="other">Aplikacija %1$s ima %2$d obvestil</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
+        <item quantity="other">%d novih obvestil</item>
+    </plurals>
+</resources>

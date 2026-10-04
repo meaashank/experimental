@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="password_set_array">
+        <item>Nenhuma</item>
+        <item>Personalizada</item>
+    </array>
+    <array name="proxy_choices_array">
+        <item>Nenhum</item>
+        <item>Orbot</item>
+        <item>I2P</item>
+        <item>Manual</item>
+    </array>
+    <array name="suggestion_name_array">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </array>
+    <array name="url_content_array">
+        <item>URL</item>
+        <item>Domínio</item>
+        <item>Título</item>
+    </array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_covers"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rl_camera_mask"
+        android:background="?attr/colorMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.prism.commons.ui.SquareImageView
+            android:id="@+id/iv_camera_mask"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_camera_white"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+</merge>

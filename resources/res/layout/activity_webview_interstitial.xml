@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/ad_web_view"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+    <com.prism.fusionadsdk.internal.view.CountdownCloseButton
+        android:layout_gravity="top|right"
+        android:id="@+id/ad_close_button"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="18dp"/>
+</FrameLayout>

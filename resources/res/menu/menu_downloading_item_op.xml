@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_downloading_pause_or_resume"
+        android:title="@string/menu_downloading_resume"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_downloading_delete"
+        android:title="@string/menu_downloading_delete"
+        app:showAsAction="never"/>
+</menu>

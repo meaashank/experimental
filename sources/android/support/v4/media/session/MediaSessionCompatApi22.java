@@ -1,0 +1,15 @@
+package android.support.v4.media.session;
+
+import android.media.session.MediaSession;
+import e.T;
+
+/* JADX INFO: loaded from: classes.dex */
+@T(22)
+class MediaSessionCompatApi22 {
+    private MediaSessionCompatApi22() {
+    }
+
+    public static void setRatingType(Object obj, int i10) {
+        ((MediaSession) obj).setRatingType(i10);
+    }
+}

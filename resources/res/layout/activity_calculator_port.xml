@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/layout_calculator_background_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/display"/>
+    <com.prism.hider.vault.calculator.CalculatorPadViewPager
+        android:id="@+id/pad_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/pad_numeric"/>
+            <include layout="@layout/pad_operator_one_col"/>
+        </LinearLayout>
+        <include layout="@layout/pad_advanced"/>
+    </com.prism.hider.vault.calculator.CalculatorPadViewPager>
+</LinearLayout>

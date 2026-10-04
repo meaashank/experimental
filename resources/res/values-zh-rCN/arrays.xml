@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="password_set_array">
+        <item>无</item>
+        <item>自定义</item>
+    </array>
+    <array name="proxy_choices_array">
+        <item>无</item>
+        <item>Orbot</item>
+        <item>I2P</item>
+        <item>手册</item>
+    </array>
+    <array name="suggestion_name_array">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </array>
+    <array name="url_content_array">
+        <item>URL</item>
+        <item>域名</item>
+        <item>标题</item>
+    </array>
+</resources>

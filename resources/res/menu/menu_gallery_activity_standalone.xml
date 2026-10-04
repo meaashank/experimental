@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_cloud_black"
+        android:id="@+id/action_standalone_version_ad"
+        android:visible="true"
+        android:title="@string/action_cloud_setting"
+        app:showAsAction="always"/>
+</menu>

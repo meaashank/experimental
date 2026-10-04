@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">Aplikace %1$s má %2$d oznámení</item>
+        <item quantity="few">Aplikace %1$s má %2$d oznámení</item>
+        <item quantity="many">Aplikace %1$s má %2$d oznámení</item>
+        <item quantity="other">Aplikace %1$s má %2$d oznámení</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nové oznámení</item>
+        <item quantity="few">%d nová oznámení</item>
+        <item quantity="many">%d nového oznámení</item>
+        <item quantity="other">%d nových oznámení</item>
+    </plurals>
+    <plurals name="notification_incognito_running_title">
+        <item quantity="one">%1$d soukromá karta otevřena</item>
+        <item quantity="few">%1$d soukromých karet otevřených</item>
+        <item quantity="many">%1$d soukromých karet otevřených</item>
+        <item quantity="other">%1$d soukromých karet otevřených</item>
+    </plurals>
+</resources>

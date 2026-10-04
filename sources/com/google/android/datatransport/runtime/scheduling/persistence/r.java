@@ -1,0 +1,12 @@
+package com.google.android.datatransport.runtime.scheduling.persistence;
+
+import android.database.Cursor;
+import com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class r implements SQLiteEventStore.Function {
+    @Override // com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore.Function
+    public final Object apply(Object obj) {
+        return SQLiteEventStore.O0((Cursor) obj);
+    }
+}

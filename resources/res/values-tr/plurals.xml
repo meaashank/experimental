@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s uygulamasının %2$d bildirimi var</item>
+        <item quantity="other">%1$s uygulamasının %2$d bildirimi var</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildirim</item>
+        <item quantity="other">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="notification_incognito_running_title">
+        <item quantity="one">%1$d gizli sekme açık</item>
+        <item quantity="other">%1$d gizli sekme açık</item>
+    </plurals>
+</resources>

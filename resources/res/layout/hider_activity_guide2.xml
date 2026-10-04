@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/guide2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/guide_2_img"
+        android:background="@mipmap/hider_bg_guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#151515"
+        android:id="@+id/guide_2_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/guide_2_title"
+        android:layout_below="@+id/guide_2_img"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#151515"
+        android:gravity="center_horizontal"
+        android:id="@+id/guide_2_tv2"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/guide_2_desc"
+        android:layout_below="@+id/guide_2_tv1"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

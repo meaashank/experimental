@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s are %2$d notificare</item>
+        <item quantity="few">%1$s are %2$d notificări</item>
+        <item quantity="other">%1$s are %2$d de notificări</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
+        <item quantity="other">%d de notificări noi</item>
+    </plurals>
+</resources>

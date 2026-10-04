@@ -1,0 +1,70 @@
+package com.mbridge.msdk.thrid.okhttp.internal.http;
+
+import java.text.DateFormat;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import org.apache.http.protocol.HttpDateGenerator;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class d {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private static final ThreadLocal<DateFormat> f159361a = new a();
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private static final String[] f159362b = {HttpDateGenerator.PATTERN_RFC1123, "EEEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy", "EEE, dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MMM-yyyy HH-mm-ss z", "EEE, dd MMM yy HH:mm:ss z", "EEE dd-MMM-yyyy HH:mm:ss z", "EEE dd MMM yyyy HH:mm:ss z", "EEE dd-MMM-yyyy HH-mm-ss z", "EEE dd-MMM-yy HH:mm:ss z", "EEE dd MMM yy HH:mm:ss z", "EEE,dd-MMM-yy HH:mm:ss z", "EEE,dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MM-yyyy HH:mm:ss z", "EEE MMM d yyyy HH:mm:ss z"};
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private static final DateFormat[] f159363c = new DateFormat[15];
+
+    public static class a extends ThreadLocal<DateFormat> {
+        @Override // java.lang.ThreadLocal
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public DateFormat initialValue() {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US);
+            simpleDateFormat.setLenient(false);
+            simpleDateFormat.setTimeZone(com.mbridge.msdk.thrid.okhttp.internal.c.f159290p);
+            return simpleDateFormat;
+        }
+    }
+
+    public static Date a(String str) {
+        if (str.length() == 0) {
+            return null;
+        }
+        ParsePosition parsePosition = new ParsePosition(0);
+        Date date = f159361a.get().parse(str, parsePosition);
+        if (parsePosition.getIndex() == str.length()) {
+            return date;
+        }
+        String[] strArr = f159362b;
+        synchronized (strArr) {
+            try {
+                int length = strArr.length;
+                for (int i10 = 0; i10 < length; i10++) {
+                    DateFormat[] dateFormatArr = f159363c;
+                    DateFormat simpleDateFormat = dateFormatArr[i10];
+                    if (simpleDateFormat == null) {
+                        simpleDateFormat = new SimpleDateFormat(f159362b[i10], Locale.US);
+                        simpleDateFormat.setTimeZone(com.mbridge.msdk.thrid.okhttp.internal.c.f159290p);
+                        dateFormatArr[i10] = simpleDateFormat;
+                    }
+                    parsePosition.setIndex(0);
+                    Date date2 = simpleDateFormat.parse(str, parsePosition);
+                    if (parsePosition.getIndex() != 0) {
+                        return date2;
+                    }
+                }
+                return null;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public static String a(Date date) {
+        return f159361a.get().format(date);
+    }
+}

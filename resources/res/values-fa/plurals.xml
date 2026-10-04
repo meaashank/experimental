@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s %2$d اعلان دارد</item>
+        <item quantity="other">%1$s %2$d اعلان دارد</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d اعلان جدید</item>
+        <item quantity="other">%d اعلان جدید</item>
+    </plurals>
+    <plurals name="notification_incognito_running_title">
+        <item quantity="one">%1$d باز خصوصی باز شد</item>
+        <item quantity="other">%1$d برگ خصوصی باز است</item>
+    </plurals>
+</resources>

@@ -1,0 +1,90 @@
+package com.mbridge.msdk.thrid.okio;
+
+import androidx.collection.Q;
+import java.io.IOException;
+import java.io.InterruptedIOException;
+import java.util.concurrent.TimeUnit;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class t {
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public static final t f159853d = new a();
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private boolean f159854a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private long f159855b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private long f159856c;
+
+    public static class a extends t {
+        @Override // com.mbridge.msdk.thrid.okio.t
+        public t a(long j10) {
+            return this;
+        }
+
+        @Override // com.mbridge.msdk.thrid.okio.t
+        public void e() throws IOException {
+        }
+
+        @Override // com.mbridge.msdk.thrid.okio.t
+        public t a(long j10, TimeUnit timeUnit) {
+            return this;
+        }
+    }
+
+    public t a(long j10, TimeUnit timeUnit) {
+        if (j10 < 0) {
+            throw new IllegalArgumentException(Q.a("timeout < 0: ", j10));
+        }
+        if (timeUnit == null) {
+            throw new IllegalArgumentException("unit == null");
+        }
+        this.f159856c = timeUnit.toNanos(j10);
+        return this;
+    }
+
+    public t b() {
+        this.f159856c = 0L;
+        return this;
+    }
+
+    public long c() {
+        if (this.f159854a) {
+            return this.f159855b;
+        }
+        throw new IllegalStateException("No deadline");
+    }
+
+    public boolean d() {
+        return this.f159854a;
+    }
+
+    public void e() throws IOException {
+        if (Thread.interrupted()) {
+            Thread.currentThread().interrupt();
+            throw new InterruptedIOException("interrupted");
+        }
+        if (this.f159854a && this.f159855b - System.nanoTime() <= 0) {
+            throw new InterruptedIOException("deadline reached");
+        }
+    }
+
+    public long f() {
+        return this.f159856c;
+    }
+
+    public t a(long j10) {
+        this.f159854a = true;
+        this.f159855b = j10;
+        return this;
+    }
+
+    public t a() {
+        this.f159854a = false;
+        return this;
+    }
+}

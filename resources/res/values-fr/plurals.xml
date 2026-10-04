@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s comporte %2$d notification</item>
+        <item quantity="other">%1$s comporte %2$d notifications</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nouvelle notification</item>
+        <item quantity="other">%d nouvelles notifications</item>
+    </plurals>
+    <plurals name="notification_incognito_running_title">
+        <item quantity="one">%1$d onglet incognito ouvert</item>
+        <item quantity="other">%1$d onglets incognito ouverts</item>
+    </plurals>
+</resources>

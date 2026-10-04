@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">O app %1$s tem %2$d notificação</item>
+        <item quantity="other">O app %1$s tem %2$d notificações</item>
+    </plurals>
+    <plurals name="notification_incognito_running_title">
+        <item quantity="one">%1$d separador privado aberto</item>
+        <item quantity="other">%1$d separadores privados abertos</item>
+    </plurals>
+</resources>

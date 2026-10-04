@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="block_ad_source_list">
+        <item>@string/block_source_default</item>
+        <item>@string/block_source_local</item>
+        <item>@string/block_source_remote</item>
+    </array>
+    <array name="block_javascript">
+        <item>@string/none</item>
+        <item>@string/unlisted_javascript</item>
+        <item>@string/listed_javascript</item>
+    </array>
+    <array name="blocked_sites">
+        <item>@string/none</item>
+        <item>@string/block_all_sites</item>
+        <item>@string/only_allow_sites</item>
+    </array>
+    <array name="com.google.firebase.crashlytics.build_ids_arch">
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>x86_64</item>
+        <item>x86_64</item>
+        <item>x86_64</item>
+        <item>x86_64</item>
+        <item>x86_64</item>
+        <item>x86</item>
+        <item>x86</item>
+        <item>x86</item>
+        <item>x86</item>
+        <item>x86</item>
+    </array>
+    <array name="com.google.firebase.crashlytics.build_ids_build_id">
+        <item>035d13d7d5aa1df938b46328f42b4d02de805503</item>
+        <item>047a4249096e5aaa3e69e6081e47bbb98bacb1b1</item>
+        <item>fa498103519fbc537a4fa96cdfc424c3887388d5</item>
+        <item>0a3dbcd586db47ff982af5b0d84abecf3dc275eb</item>
+        <item>196dc8d664a42fa31ca4fb7fa6b3881280fb88aa</item>
+        <item>a30bcdce162afd9c708b6ae309d86763c5a8fdcc</item>
+        <item>b30420486972643ed048be003987a95d3539f44d</item>
+        <item>bc860efe07caf057f84f5a5507e1a3fee7bfbe88</item>
+        <item>0f50ba97274407a0fece09def7269c8222e62f0f</item>
+        <item>d0309e0c667030eab1d179e893f25b27f1ac986f</item>
+        <item>fa98a997cdd9b43f190a4bd20f3dad441b4062f0</item>
+        <item>fc045269b14182b2cf117f74e78bb130f1c92ebf</item>
+        <item>00000000000000000000000000000000</item>
+        <item>6ba77dbb7533b0d39295bf0b298fdc35477d4d0d</item>
+        <item>5e64ab61bdc0fc0292344c878691de20f1f84d61</item>
+        <item>b35304ac3887f90995228ea649544853174d1084</item>
+        <item>b0bc4d16a048e479e8386834a0ec907e43ebeb62</item>
+        <item>5d331bb86be4894a70f875134426016127aab2be</item>
+        <item>280b15c764324f7dd6fc87aed70036d4fa81d017</item>
+        <item>84458063500873d88f928022e40ebab571b0eb6f</item>
+        <item>328a499b94adbe5c555035bd3bbd5981c6f09676</item>
+        <item>9d93d440c14ee63998d723e4fdebb5f814cd969e</item>
+        <item>c83b9bcb89acb5202819254ab96d59705772dce3</item>
+        <item>00000000000000000000000000000000</item>
+        <item>ee5dc9815c01640a683d050dfe69560e13236e7f</item>
+        <item>cedd5a6c4c746aed24dd214fbdc4f1b7d634675f</item>
+        <item>acf6365f1a57d0513d7e78424b14f07c579aa5fc</item>
+        <item>07353011e60add71828daeee2c3c021184f963c2</item>
+        <item>a7846ae06d6bf6cf63fa7c5e056b5de493c71567</item>
+        <item>8b070ceb4a96d5dff71d9d17a5213be4b1324a62</item>
+        <item>6b90d7edb171dc8d08e8048e7f0bbf7ff3f6b715</item>
+        <item>988a3ef475baabbb23fefbe3a78321b0fdabcf83</item>
+        <item>a58a75e9649f3d05f4560b0f3feef027533294f4</item>
+        <item>fc2d1c58a5872c6976e27ed028f6d262a2dc36fc</item>
+        <item>316d533ee882d9420bfcfc20e4f3d1c56c86672f</item>
+        <item>5d3b215b3145206bcd102b4f29b3cf1224255124</item>
+        <item>f3e82b0a78f4c567cca77fe6c132199d806987d1</item>
+        <item>56a1bea1e58b10dcba9c1ab8a843a20f5e17a736</item>
+        <item>d0160199dfaac60b67577b845a3c3e3969747b22</item>
+        <item>1db1b3ec55d1bbbb3bd2601c448b8bfb83a038bb</item>
+        <item>a764ec2fc98c82741950b8d0f8779b43a11140ec</item>
+        <item>56b3f97a7efb05fc89674cf68f6c27847a93860b</item>
+        <item>3f6a9e117ea061ef3dd21b33b3b47af883598f70</item>
+        <item>ede5b131780f8d0c88a9d57aea00889421276385</item>
+    </array>
+    <array name="com.google.firebase.crashlytics.build_ids_lib">
+        <item>libshadowhook.so</item>
+        <item>libapminsighta.so</item>
+        <item>libapminsightb.so</item>
+        <item>libcrashlytics-common.so</item>
+        <item>libbuffer.so</item>
+        <item>libtt_ugen_layout.so</item>
+        <item>libhelper.so</item>
+        <item>libcrashlytics-trampoline.so</item>
+        <item>libgaianative.so</item>
+        <item>libpglarmor.so</item>
+        <item>libandroidx.graphics.path.so</item>
+        <item>libfile_lock.so</item>
+        <item>libshadowhook_nothing.so</item>
+        <item>libcrashlytics-handler.so</item>
+        <item>libcrashlytics.so</item>
+        <item>libnms.so</item>
+        <item>libtobEmbedPagEncrypt.so</item>
+        <item>libapminsighta.so</item>
+        <item>libapminsightb.so</item>
+        <item>libcrashlytics-common.so</item>
+        <item>libgaianative_64.so</item>
+        <item>libbuffer.so</item>
+        <item>libshadowhook_64.so</item>
+        <item>libshadowhook_nothing_64.so</item>
+        <item>libtt_ugen_layout.so</item>
+        <item>libhelper.so</item>
+        <item>libcrashlytics-trampoline.so</item>
+        <item>libpglarmor.so</item>
+        <item>libandroidx.graphics.path.so</item>
+        <item>libfile_lock.so</item>
+        <item>libcrashlytics-handler.so</item>
+        <item>libcrashlytics.so</item>
+        <item>libnms.so</item>
+        <item>libtobEmbedPagEncrypt.so</item>
+        <item>libcrashlytics-common.so</item>
+        <item>libcrashlytics-trampoline.so</item>
+        <item>libandroidx.graphics.path.so</item>
+        <item>libcrashlytics-handler.so</item>
+        <item>libcrashlytics.so</item>
+        <item>libcrashlytics-common.so</item>
+        <item>libcrashlytics-trampoline.so</item>
+        <item>libandroidx.graphics.path.so</item>
+        <item>libcrashlytics-handler.so</item>
+        <item>libcrashlytics.so</item>
+    </array>
+    <array name="download_folder">
+        <item>@string/folder_default</item>
+        <item>@string/folder_custom</item>
+    </array>
+    <array name="drawer_lines">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="drawer_size">
+        <item>@string/action_auto</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="fexplorer_actions">
+        <item>@string/fexplorer_rename</item>
+        <item>@string/fexplorer_delete</item>
+    </array>
+    <array name="files_sort">
+        <item>@string/fexplorer_sort_by_name</item>
+        <item>@string/fexplorer_sort_by_size</item>
+        <item>@string/fexplorer_sort_by_date</item>
+    </array>
+    <array name="files_sort_values">
+        <item>SORT_BY_NAME</item>
+        <item>SORT_BY_SIZE</item>
+        <item>SORT_BY_DATE</item>
+    </array>
+    <array name="font_types">
+        <item>Roboto</item>
+        <item>Roboto Light</item>
+        <item>Source Code Pro</item>
+        <item>Droid Sans Mono</item>
+    </array>
+    <array name="font_types_values">
+        <item>roboto</item>
+        <item>roboto_light</item>
+        <item>source_code_pro</item>
+        <item>droid_sans_mono</item>
+    </array>
+    <array name="homepage">
+        <item>@string/action_homepage</item>
+        <item>@string/action_blank</item>
+        <item>@string/action_bookmarks</item>
+        <item>@string/action_webpage</item>
+    </array>
+    <array name="homepage_type">
+        <item>@string/agent_default</item>
+        <item>@string/focused</item>
+        <item>@string/informational</item>
+    </array>
+    <array name="icon_shape_override_paths_names">
+        <item>@string/icon_shape_system_default</item>
+        <item>@string/icon_shape_square</item>
+        <item>@string/icon_shape_squircle</item>
+        <item>@string/icon_shape_circle</item>
+        <item>@string/icon_shape_teardrop</item>
+    </array>
+    <array name="icon_shape_override_paths_values">
+        <item />
+        <item>M50,0L100,0 100,100 0,100 0,0z</item>
+        <item>M50,0 C10,0 0,10 0,50 0,90 10,100 50,100 90,100 100,90 100,50 100,10 90,0 50,0 Z</item>
+        <item>M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0</item>
+        <item>M50,0A50,50,0,0 1 100,50 L100,85 A15,15,0,0 1 85,100 L50,100 A50,50,0,0 1 50,0z</item>
+    </array>
+    <array name="navbar_col">
+        <item>@string/agent_default</item>
+        <item>@string/color</item>
+    </array>
+    <array name="password">
+        <item>@string/none</item>
+        <item>@string/enter_password</item>
+    </array>
+    <array name="password_set_array">
+        <item>None</item>
+        <item>Custom</item>
+    </array>
+    <array name="proxy_choices_array">
+        <item>None</item>
+        <item>Orbot</item>
+        <item>I2P</item>
+        <item>Manual</item>
+    </array>
+    <array name="suggestion_name_array">
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+    </array>
+    <array name="suggestions">
+        <item>@string/powered_by_google</item>
+        <item>@string/powered_by_duck</item>
+        <item>@string/powered_by_baidu</item>
+        <item>@string/powered_by_naver</item>
+        <item>@string/app_name</item>
+        <item>@string/search_suggestions_off</item>
+    </array>
+    <array name="themes">
+        <item>@string/light_theme</item>
+        <item>@string/dark_theme</item>
+        <item>@string/black_theme</item>
+    </array>
+    <array name="url_content_array">
+        <item>URL</item>
+        <item>Domain</item>
+        <item>Title</item>
+    </array>
+    <array name="user_agent">
+        <item>@string/agent_default</item>
+        <item>@string/agent_desktop</item>
+        <item>@string/agent_mobile</item>
+        <item>@string/agent_custom</item>
+    </array>
+</resources>

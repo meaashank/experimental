@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s, hat %2$d Benachrichtigung</item>
+        <item quantity="other">%1$s, hat %2$d Benachrichtigungen</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d neue Benachrichtigung</item>
+        <item quantity="other">%d neue Benachrichtigungen</item>
+    </plurals>
+    <plurals name="notification_incognito_running_title">
+        <item quantity="one">%1$d privater Tab geöffnet</item>
+        <item quantity="other">%1$d private Tabs geöffnet</item>
+    </plurals>
+</resources>

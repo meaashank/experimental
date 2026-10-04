@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "pages": {
+    "home": {
+      "maxAds": 3,
+      "slots": [
+        {
+          "slotId": "home_arrows_go",
+          "position": {"anchor": "below_search"},
+          "sources": [
+            {"type": "custom", "candidates": [{"creativeId": "arrows_go"}]}
+          ]
+        },
+        {
+          "slotId": "home_painting_by_number",
+          "position": {"anchor": "below_search"},
+          "sources": [
+            {"type": "custom", "candidates": [{"creativeId": "painting_by_number"}]}
+          ]
+        },
+        {
+          "slotId": "home_mahjong_duet",
+          "position": {"anchor": "below_search"},
+          "sources": [
+            {"type": "custom", "candidates": [{"creativeId": "mahjong_duet"}]}
+          ]
+        }
+      ]
+    },
+    "search": {
+      "maxAds": 3,
+      "slots": [
+        {
+          "slotId": "search_arrows_go",
+          "position": {"anchor": "below_search_header"},
+          "sources": [
+            {"type": "custom", "candidates": [{"creativeId": "arrows_go"}]}
+          ]
+        },
+        {
+          "slotId": "search_painting_by_number",
+          "position": {"anchor": "after_results"},
+          "sources": [
+            {"type": "custom", "candidates": [{"creativeId": "painting_by_number"}]}
+          ]
+        },
+        {
+          "slotId": "search_mahjong_duet",
+          "position": {"anchor": "after_results", "afterItems": 12},
+          "sources": [
+            {"type": "custom", "candidates": [{"creativeId": "mahjong_duet"}]}
+          ]
+        }
+      ]
+    }
+  },
+  "creatives": {
+    "arrows_go": {
+      "title": {
+        "defaultValue": "Arrows Go",
+        "values": {
+          "zh": "箭头消消乐",
+          "pt-BR": "Arrows Go",
+          "id": "Arrows Go",
+          "ja": "アローズGO",
+          "ko": "애로우 고"
+        }
+      },
+      "description": {
+        "defaultValue": "Find the unblocked arrow, tap in the right order, and clear the whole board.",
+        "values": {
+          "zh": "找出未被阻挡的箭头，按正确顺序点击，清空整个棋盘。",
+          "pt-BR": "Encontre a seta desbloqueada, toque na ordem certa e limpe todo o tabuleiro.",
+          "id": "Temukan panah yang tidak terhalang, ketuk dalam urutan yang tepat, dan bersihkan seluruh papan.",
+          "ja": "ブロックされていない矢印を見つけ、正しい順番でタップして、ボードをすべてクリアしましょう。",
+          "ko": "막히지 않은 화살표를 찾아 올바른 순서로 탭하고 보드를 모두 비우세요."
+        }
+      },
+      "cta": {
+        "defaultValue": "View on Google Play",
+        "values": {
+          "zh": "前往 Google Play",
+          "pt-BR": "Ver no Google Play",
+          "id": "Lihat di Google Play",
+          "ja": "Google Playで見る",
+          "ko": "Google Play에서 보기"
+        }
+      },
+      "media": {
+        "type": "image",
+        "url": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/arrowgo/feature_arrows_1024x500.jpg",
+        "sha256": "444b130f0ca7b4843ab318370a315c5c6dd6dd367940089ec29d664ea803778b",
+        "aspectRatio": 2.048
+      },
+      "action": {
+        "type": "google_play",
+        "packageName": "com.prism.game.arrowsgo",
+        "source": "apphider",
+        "medium": "native_ad"
+      }
+    },
+    "painting_by_number": {
+      "title": {
+        "defaultValue": "Painting by Number",
+        "values": {
+          "zh": "数字填色",
+          "pt-BR": "Pintura por números",
+          "id": "Mewarnai dengan Angka",
+          "ja": "数字で色塗り",
+          "ko": "숫자로 색칠하기"
+        }
+      },
+      "description": {
+        "defaultValue": "Relax with paint by number art, daily coloring picks, hints, and easy taps.",
+        "values": {
+          "zh": "通过数字填色艺术、每日涂色精选、提示和轻松点击来放松身心。",
+          "pt-BR": "Relaxe com arte de pintar por números, seleções diárias para colorir, dicas e toques simples.",
+          "id": "Bersantailah dengan seni mewarnai berdasarkan angka, pilihan mewarnai harian, petunjuk, dan ketukan mudah.",
+          "ja": "数字で色を塗るアート、毎日のおすすめ塗り絵、ヒント、かんたん操作でリラックス。",
+          "ko": "숫자에 따라 색칠하는 아트, 매일 추천되는 컬러링, 힌트와 간편한 탭으로 편안하게 즐기세요."
+        }
+      },
+      "cta": {
+        "defaultValue": "View on Google Play",
+        "values": {
+          "zh": "前往 Google Play",
+          "pt-BR": "Ver no Google Play",
+          "id": "Lihat di Google Play",
+          "ja": "Google Playで見る",
+          "ko": "Google Play에서 보기"
+        }
+      },
+      "media": {
+        "type": "image",
+        "url": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/color/coloring_top.jpg",
+        "sha256": "a11ea7a58c44784973d66264315534a6af9b9e5411546784e62203e419544744",
+        "aspectRatio": 2.048
+      },
+      "action": {
+        "type": "google_play",
+        "packageName": "com.prism.game.colorbynumber",
+        "source": "apphider",
+        "medium": "native_ad"
+      }
+    },
+    "mahjong_duet": {
+      "title": {
+        "defaultValue": "Mahjong Duet: Tile Match",
+        "values": {
+          "zh": "麻将对对碰：方块配对",
+          "pt-BR": "Mahjong Duet: Combine Peças",
+          "id": "Mahjong Duet: Cocokkan Ubin",
+          "ja": "Mahjong Duet：タイルマッチ",
+          "ko": "Mahjong Duet: 타일 매치"
+        }
+      },
+      "description": {
+        "defaultValue": "Match beautiful mahjong tiles, clear relaxing levels, and climb the ranks.",
+        "values": {
+          "zh": "配对精美的麻将牌，轻松通关，不断提升排名。",
+          "pt-BR": "Combine lindas peças de mahjong, conclua fases relaxantes e suba no ranking.",
+          "id": "Cocokkan ubin mahjong yang indah, selesaikan level santai, dan naik peringkat.",
+          "ja": "美しい麻雀牌をそろえ、リラックスしてステージをクリアし、ランキングを上げましょう。",
+          "ko": "아름다운 마작 타일을 맞추고 편안한 레벨을 클리어하며 순위를 올려 보세요."
+        }
+      },
+      "cta": {
+        "defaultValue": "View on Google Play",
+        "values": {
+          "zh": "前往 Google Play",
+          "pt-BR": "Ver no Google Play",
+          "id": "Lihat di Google Play",
+          "ja": "Google Playで見る",
+          "ko": "Google Play에서 보기"
+        }
+      },
+      "media": {
+        "type": "image",
+        "url": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/mahjiang/feature_mahjiong_1024x500.jpg",
+        "sha256": "8fd6d9307fb46dec374acfd6be2b38f98777f359eb7591f6085eebfe64d750c8",
+        "aspectRatio": 2.048
+      },
+      "action": {
+        "type": "google_play",
+        "packageName": "com.prism.game.mahjong",
+        "source": "apphider",
+        "medium": "native_ad"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s, ունի %2$d ծանուցում</item>
+        <item quantity="other">%1$s, ունի %2$d ծանուցում</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d նոր ծանուցում</item>
+        <item quantity="other">%d նոր ծանուցում</item>
+    </plurals>
+</resources>

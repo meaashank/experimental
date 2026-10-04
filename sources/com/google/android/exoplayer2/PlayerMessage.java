@@ -1,0 +1,139 @@
+package com.google.android.exoplayer2;
+
+import android.os.Handler;
+import androidx.annotation.Nullable;
+import com.google.android.exoplayer2.util.Assertions;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class PlayerMessage {
+    private Handler handler;
+    private boolean isDelivered;
+    private boolean isProcessed;
+    private boolean isSent;
+    private Object payload;
+    private final Sender sender;
+    private final Target target;
+    private final Timeline timeline;
+    private int type;
+    private int windowIndex;
+    private long positionMs = -9223372036854775807L;
+    private boolean deleteAfterDelivery = true;
+
+    public interface Sender {
+        void sendMessage(PlayerMessage playerMessage);
+    }
+
+    public interface Target {
+        void handleMessage(int i10, Object obj) throws ExoPlaybackException;
+    }
+
+    public PlayerMessage(Sender sender, Target target, Timeline timeline, int i10, Handler handler) {
+        this.sender = sender;
+        this.target = target;
+        this.timeline = timeline;
+        this.handler = handler;
+        this.windowIndex = i10;
+    }
+
+    public synchronized boolean blockUntilDelivered() throws InterruptedException {
+        try {
+            Assertions.checkState(this.isSent);
+            Assertions.checkState(this.handler.getLooper().getThread() != Thread.currentThread());
+            while (!this.isProcessed) {
+                wait();
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return this.isDelivered;
+    }
+
+    public boolean getDeleteAfterDelivery() {
+        return this.deleteAfterDelivery;
+    }
+
+    public Handler getHandler() {
+        return this.handler;
+    }
+
+    public Object getPayload() {
+        return this.payload;
+    }
+
+    public long getPositionMs() {
+        return this.positionMs;
+    }
+
+    public Target getTarget() {
+        return this.target;
+    }
+
+    public Timeline getTimeline() {
+        return this.timeline;
+    }
+
+    public int getType() {
+        return this.type;
+    }
+
+    public int getWindowIndex() {
+        return this.windowIndex;
+    }
+
+    public synchronized void markAsProcessed(boolean z10) {
+        this.isDelivered = z10 | this.isDelivered;
+        this.isProcessed = true;
+        notifyAll();
+    }
+
+    public PlayerMessage send() {
+        Assertions.checkState(!this.isSent);
+        if (this.positionMs == -9223372036854775807L) {
+            Assertions.checkArgument(this.deleteAfterDelivery);
+        }
+        this.isSent = true;
+        this.sender.sendMessage(this);
+        return this;
+    }
+
+    public PlayerMessage setDeleteAfterDelivery(boolean z10) {
+        Assertions.checkState(!this.isSent);
+        this.deleteAfterDelivery = z10;
+        return this;
+    }
+
+    public PlayerMessage setHandler(Handler handler) {
+        Assertions.checkState(!this.isSent);
+        this.handler = handler;
+        return this;
+    }
+
+    public PlayerMessage setPayload(@Nullable Object obj) {
+        Assertions.checkState(!this.isSent);
+        this.payload = obj;
+        return this;
+    }
+
+    public PlayerMessage setPosition(long j10) {
+        Assertions.checkState(!this.isSent);
+        this.positionMs = j10;
+        return this;
+    }
+
+    public PlayerMessage setType(int i10) {
+        Assertions.checkState(!this.isSent);
+        this.type = i10;
+        return this;
+    }
+
+    public PlayerMessage setPosition(int i10, long j10) {
+        Assertions.checkState(!this.isSent);
+        Assertions.checkArgument(j10 != -9223372036854775807L);
+        if (i10 >= 0 && (this.timeline.isEmpty() || i10 < this.timeline.getWindowCount())) {
+            this.windowIndex = i10;
+            this.positionMs = j10;
+            return this;
+        }
+        throw new IllegalSeekPositionException(this.timeline, i10, j10);
+    }
+}

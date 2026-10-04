@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="?attr/listBackground"
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+    <ImageView
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/faviconBookmark"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="@dimen/material_grid_small_icon"
+        android:layout_height="@dimen/material_grid_small_icon"
+        android:layout_marginLeft="@dimen/material_grid_margin"
+        android:layout_marginRight="@dimen/material_grid_margin"
+        android:contentDescription="@null"/>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/textBookmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:autoSizeTextType="uniform"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeMaxTextSize="16sp"/>
+    <ImageButton
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/dropdownBookmark"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="@dimen/material_grid_small_icon"
+        android:layout_height="@dimen/material_grid_small_icon"
+        android:layout_marginLeft="@dimen/material_grid_margin"
+        android:layout_marginRight="@dimen/material_grid_margin"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_baseline_more_vert"/>
+</LinearLayout>

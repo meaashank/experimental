@@ -1,0 +1,556 @@
+{
+  "initializer": [
+    {
+      "adNetworkName": "admob",
+      "initializer": "com.prism.fads.admob.AdmobInitializer",
+      "params": "ca-app-pub-9078095443651897~7894467461"
+    },
+    {
+      "adNetworkName": "pungle",
+      "initializer": "com.prism.fads.pungle.PungleInitializer",
+      "params": "8539091"
+    },
+    {
+        "adNetworkName": "mintegral",
+        "initializer": "com.prism.fads.mintegral.MintegralAdsInitializer",
+        "params": "{\"appId\":\"5516691\",\"appKey\":\"cb8e8cfaaaaa266ee12c6bad943f35a8\"}"
+    },
+    {
+      "adNetworkName": "unityads",
+      "initializer": "com.prism.fads.unityads.UnityAdsInitializer",
+      "params": ""
+    }
+
+  ],
+  "sites": [
+    {
+      "sitesName": "del_OPEN_APP_SPLASH_AD",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "d",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "del_OPEN_APP_SPLASH_AD_NEW",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "native_fake_interstitial",
+          "id": ""
+        },
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "high_all",
+        "intervalScale": "d",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "RESUME_APP_SPLASH_AD",
+      "adid": [
+        {
+          "adNetworkName": "",
+          "type": "",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "d",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "MAIN_BOARD_CARD_AD",
+      "adid": [
+        {
+          "adNetworkName": "",
+          "type": "",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "t",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "GALLERY_MAIN_BOARD_BANNER_AD",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "",
+          "id": "123456789"
+        },
+        {
+          "adNetworkName": "mobfox",
+          "type": "",
+          "id": "123456789"
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "",
+        "intervalScale": "d",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "OPEN_ALBUM_AD",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "t",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "IMPORT_APP_INTERSTITIAL_AD_CONFIG",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "t",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "MAIN_BOARD_BANNER_AD",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "",
+          "id": "123456789"
+        },
+        {
+          "adNetworkName": "mobfox",
+          "type": "",
+          "id": "123456789"
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "",
+        "intervalScale": "d",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "OPEN_GUEST_APP_AD",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "d",
+        "interval": 3
+      }
+    },
+    {
+      "sitesName": "OPEN_GUEST_APP_AD_NEW",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "native_fake_interstitial",
+          "id": ""
+        },
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "d",
+        "interval": 4
+      }
+    },
+    {
+      "sitesName": "OPEN_GUEST_APP_AD_NEW2",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "native_fake_interstitial",
+          "id": ""
+        },
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "d",
+        "interval": 4
+      }
+    },
+    {
+      "sitesName": "OPEN_GUEST_APP_AD_NEW3",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": "ca-app-pub-9078095443651897/8622059927"
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "high_all",
+        "intervalScale": "t",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "OPEN_GUEST_APP_AD_NEW4",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": "ca-app-pub-9078095443651897/8622059927"
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "high_all",
+        "intervalScale": "t",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "OPEN_GUEST_APP_AD_NEW5",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": "ca-app-pub-9078095443651897/4997608639"
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "high_all",
+        "intervalScale": "t",
+        "interval": 1
+      },
+      "fillControl": {
+        "enabled": true,
+        "percent": 70
+      },
+      "customFill": {
+        "enabled": true,
+        "trigger": "all_network_no_fill",
+        "sceneId": "apphider_open_guest_app_v1"
+      }
+    },
+    {
+      "sitesName": "LOADING_GUEST_APP",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": "ca-app-pub-9078095443651897/8622059927"
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "high_all",
+        "intervalScale": "t",
+        "interval": 4
+      }
+    },
+    {
+      "sitesName": "UNLIMITED_PLAY_GAME",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "rewardedIntersititials",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "high_all",
+        "intervalScale": "t",
+        "interval": 1
+      }
+    },
+    {
+      "sitesName": "IMPORT_VIDEO_PHOTO_AD",
+      "adid": [
+        {
+          "adNetworkName": "admob",
+          "type": "interstitial",
+          "id": ""
+        }
+      ],
+      "strategy": {
+        "versionCode": "",
+        "name": "base",
+        "intervalScale": "t",
+        "interval": 1
+      }
+    }
+  ],
+  "customFillConfigs": [
+    {
+      "sceneId": "apphider_open_guest_app_v1",
+      "schemaVersion": 1,
+      "adLabel": {
+        "defaultValue": "Ad",
+        "values": {
+          "zh-CN": "广告",
+          "zh-TW": "廣告",
+          "ja": "広告",
+          "ko": "광고",
+          "pt-BR": "Anúncio",
+          "es-MX": "Anuncio",
+          "id": "Iklan",
+          "hi-IN": "विज्ञापन",
+          "ar": "إعلان"
+        }
+      },
+      "closeHint": {
+        "defaultValue": "Close ad",
+        "values": {
+          "zh-CN": "关闭广告",
+          "zh-TW": "關閉廣告",
+          "ja": "広告を閉じる",
+          "ko": "광고 닫기",
+          "pt-BR": "Fechar anúncio",
+          "es-MX": "Cerrar anuncio",
+          "id": "Tutup iklan",
+          "hi-IN": "विज्ञापन बंद करें",
+          "ar": "إغلاق الإعلان"
+        }
+      },
+      "template": {
+        "remoteKey": "fusionadsdk_custom_fill_apphider_open_guest_template_v1",
+        "localAsset": "fusionadsdk/custom_fill/default_interstitial_template.html"
+      },
+      "variants": [
+        {
+          "variantId": "ad_arrowgo",
+          "weight": 50,
+          "iconUrl": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/arrowgo/ads_icon.jpg",
+          "heroImageUrl": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/arrowgo/ads_screenshot.jpg",
+          "heroHtmlUrl": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/arrowgo/arrows_go_playable_ad_ptbr.html",
+          "clickUrl": "https://play.google.com/store/apps/details?id=com.prism.game.arrowsgo&referrer=utm_source%3Dhider",
+          "packageName": "com.prism.game.arrowsgo",
+          "category": "Puzzle",
+          "rating": 4.8,
+          "badge": {
+            "defaultValue": "Relaxing puzzle",
+            "values": {
+              "zh-CN": "轻松益智",
+              "zh-TW": "輕鬆益智",
+              "ja": "リラックスパズル",
+              "ko": "힐링 퍼즐",
+              "pt-BR": "Quebra-cabeça relaxante",
+              "es-MX": "Rompecabezas relajante",
+              "id": "Puzzle santai",
+              "hi-IN": "आरामदायक पहेली",
+              "ar": "لغز مريح"
+            }
+          },
+          "title": {
+            "defaultValue": "Arrows Go!",
+            "values": {
+              "zh-CN": "箭头消消乐！",
+              "zh-TW": "箭頭消消樂！",
+              "ja": "アローズGO！",
+              "ko": "애로우 고!",
+              "pt-BR": "Arrows Go!",
+              "es-MX": "Arrows Go!",
+              "id": "Arrows Go!",
+              "hi-IN": "एरोज़ गो!",
+              "ar": "Arrows Go!"
+            }
+          },
+          "description": {
+            "defaultValue": "Tap arrows, clear the board, and enjoy a relaxing brain puzzle adventure with thousands of satisfying levels.",
+            "values": {
+              "zh-CN": "点击箭头，清空棋盘，开启轻松解压的脑力闯关之旅，数千关卡等你挑战。",
+              "zh-TW": "點擊箭頭，清空棋盤，開啟輕鬆解壓的腦力闖關之旅，數千關卡等你挑戰。",
+              "ja": "矢印をタップして盤面をクリア。何千ものステージを気軽に楽しめる、癒やし系の脳トレパズルです。",
+              "ko": "화살표를 탭해 보드를 비우고, 수천 개의 레벨을 편안하게 즐기는 두뇌 퍼즐 모험을 시작하세요.",
+              "pt-BR": "Toque nas setas, limpe o tabuleiro e curta uma aventura relaxante de quebra-cabeça com milhares de fases envolventes.",
+              "es-MX": "Toca las flechas, limpia el tablero y disfruta una aventura relajante de rompecabezas con miles de niveles satisfactorios.",
+              "id": "Ketuk panah, bersihkan papan, dan nikmati petualangan puzzle santai dengan ribuan level yang memuaskan.",
+              "hi-IN": "तीरों पर टैप करें, बोर्ड साफ करें, और हजारों संतोषजनक लेवल वाली आरामदायक ब्रेन पज़ल यात्रा का आनंद लें।",
+              "ar": "اضغط على الأسهم، امسح اللوحة، واستمتع بمغامرة ألغاز مريحة تضم آلاف المراحل الممتعة."
+            }
+          },
+          "socialProof": {
+            "defaultValue": ""
+          },
+          "reviewCount": {
+            "defaultValue": "128K reviews",
+            "values": {
+              "zh-CN": "12.8万条评价",
+              "zh-TW": "12.8萬則評價",
+              "ja": "12.8万件のレビュー",
+              "ko": "12.8만개 리뷰",
+              "pt-BR": "128 mil avaliações",
+              "es-MX": "128 mil reseñas",
+              "id": "128 rb ulasan",
+              "hi-IN": "1.28 लाख समीक्षाएँ",
+              "ar": "128 ألف مراجعة"
+            }
+          },
+          "cta": {
+            "defaultValue": "Install now",
+            "values": {
+              "zh-CN": "立即安装",
+              "zh-TW": "立即安裝",
+              "ja": "今すぐインストール",
+              "ko": "지금 설치",
+              "pt-BR": "Instalar agora",
+              "es-MX": "Instalar ahora",
+              "id": "Instal sekarang",
+              "hi-IN": "अभी इंस्टॉल करें",
+              "ar": "ثبّت الآن"
+            }
+          },
+          "listTitle": {
+            "defaultValue": ""
+          },
+          "listSubtitle": {
+            "defaultValue": ""
+          },
+          "features": [],
+          "listItems": []
+        },
+        {
+          "variantId": "ad_blockblast",
+          "weight": 50,
+          "iconUrl": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/blackbang/icon.jpg",
+          "heroImageUrl": "https://assets-ads-1251001113.cos.ap-singapore.myqcloud.com/blackbang/ads.jpg",
+          "clickUrl": "https://play.google.com/store/apps/details?id=com.prism.game.blockblast&referrer=utm_source%3Dhider_calc",
+          "packageName": "com.prism.game.blockblast",
+          "category": "Puzzle",
+          "rating": 4.7,
+          "badge": {
+            "defaultValue": "Block puzzle",
+            "values": {
+              "zh-CN": "方块益智",
+              "zh-TW": "方塊益智",
+              "ja": "ブロックパズル",
+              "ko": "블록 퍼즐",
+              "pt-BR": "Quebra-cabeça de blocos",
+              "es-MX": "Rompecabezas de bloques",
+              "id": "Puzzle blok",
+              "hi-IN": "ब्लॉक पहेली",
+              "ar": "لغز المكعبات"
+            }
+          },
+          "title": {
+            "defaultValue": "Block Bang!",
+            "values": {
+              "zh-CN": "方块爆爆乐！",
+              "zh-TW": "方塊爆爆樂！",
+              "ja": "ブロックバン！",
+              "ko": "블록 뱅!",
+              "pt-BR": "Block Bang!",
+              "es-MX": "Block Bang!",
+              "id": "Block Bang!",
+              "hi-IN": "ब्लॉक बैंग!",
+              "ar": "Block Bang!"
+            }
+          },
+          "description": {
+            "defaultValue": "Play a colorful block puzzle offline, line up perfect moves, and trigger satisfying blasts anytime you want.",
+            "values": {
+              "zh-CN": "离线也能畅玩的彩色方块益智游戏，摆好每一步，随时享受爽快连消与爆破乐趣。",
+              "zh-TW": "離線也能暢玩的彩色方塊益智遊戲，擺好每一步，隨時享受爽快連消與爆破樂趣。",
+              "ja": "オフラインでも遊べるカラフルなブロックパズル。ひらめきの一手で、爽快な連鎖と爆破をいつでも楽しめます。",
+              "ko": "오프라인에서도 즐길 수 있는 컬러 블록 퍼즐 게임으로, 한 수 한 수 맞춰 시원한 연쇄와 폭발의 재미를 느껴보세요.",
+              "pt-BR": "Jogue offline um quebra-cabeça colorido de blocos, planeje movimentos perfeitos e provoque explosões satisfatórias quando quiser.",
+              "es-MX": "Juega sin conexión un colorido rompecabezas de bloques, acomoda cada movimiento y activa explosiones satisfactorias en cualquier momento.",
+              "id": "Mainkan puzzle blok warna-warni secara offline, susun langkah terbaik, dan picu ledakan yang memuaskan kapan saja.",
+              "hi-IN": "ऑफलाइन रंगीन ब्लॉक पज़ल खेलें, सही चालें जमाएँ, और जब चाहें संतोषजनक ब्लास्ट का आनंद लें।",
+              "ar": "العب لعبة ألغاز مكعبات ملونة دون اتصال، رتّب حركاتك بدقة، واصنع انفجارات ممتعة في أي وقت."
+            }
+          },
+          "socialProof": {
+            "defaultValue": ""
+          },
+          "reviewCount": {
+            "defaultValue": "96K reviews",
+            "values": {
+              "zh-CN": "9.6万条评价",
+              "zh-TW": "9.6萬則評價",
+              "ja": "9.6万件のレビュー",
+              "ko": "9.6만개 리뷰",
+              "pt-BR": "96 mil avaliações",
+              "es-MX": "96 mil reseñas",
+              "id": "96 rb ulasan",
+              "hi-IN": "96 हज़ार समीक्षाएँ",
+              "ar": "96 ألف مراجعة"
+            }
+          },
+          "cta": {
+            "defaultValue": "Install now",
+            "values": {
+              "zh-CN": "立即安装",
+              "zh-TW": "立即安裝",
+              "ja": "今すぐインストール",
+              "ko": "지금 설치",
+              "pt-BR": "Instalar agora",
+              "es-MX": "Instalar ahora",
+              "id": "Instal sekarang",
+              "hi-IN": "अभी इंस्टॉल करें",
+              "ar": "ثبّت الآن"
+            }
+          },
+          "listTitle": {
+            "defaultValue": ""
+          },
+          "listSubtitle": {
+            "defaultValue": ""
+          },
+          "features": [],
+          "listItems": []
+        }
+      ]
+    }
+  ]
+}

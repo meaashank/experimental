@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prism.hider.ad.ui.AdsContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ads_container_workspace"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <fragment
+        android:name="com.prism.hider.ad.ui.AdsContainerView.AdsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.prism.hider.ad.ui.AdsContainerView>

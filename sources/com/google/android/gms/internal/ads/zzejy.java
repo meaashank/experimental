@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zzejy implements zzinw {
+    private final zziof zza;
+    private final zziof zzb;
+
+    private zzejy(zziof zziofVar, zziof zziofVar2) {
+        this.zza = zziofVar;
+        this.zzb = zziofVar2;
+    }
+
+    public static zzejy zzc(zziof zziofVar, zziof zziofVar2) {
+        return new zzejy(zziofVar, zziofVar2);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zziol, com.google.android.gms.internal.ads.zziok
+    /* JADX INFO: renamed from: zza, reason: merged with bridge method [inline-methods] */
+    public final zzejx zzb() {
+        return new zzejx(((zzeju) this.zza).zzb(), (zzhdi) this.zzb.zzb());
+    }
+}

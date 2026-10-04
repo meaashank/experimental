@@ -1,0 +1,71 @@
+package androidx.datastore.preferences.core;
+
+import ed.p;
+import kotlin.C4885d0;
+import kotlin.L0;
+import kotlin.coroutines.e;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: loaded from: classes2.dex */
+@Vc.d(c = "androidx.datastore.preferences.core.PreferenceDataStore$updateData$2", f = "PreferenceDataStoreFactory.kt", i = {}, l = {85}, m = "invokeSuspend", n = {}, s = {})
+public final class PreferenceDataStore$updateData$2 extends SuspendLambda implements p<a, e<? super a>, Object> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public int f112483a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public /* synthetic */ Object f112484b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ p<a, e<? super a>, Object> f112485c;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public PreferenceDataStore$updateData$2(p<? super a, ? super e<? super a>, ? extends Object> pVar, e<? super PreferenceDataStore$updateData$2> eVar) {
+        super(2, eVar);
+        this.f112485c = pVar;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @NotNull
+    public final e<L0> create(@Nullable Object obj, @NotNull e<?> eVar) {
+        PreferenceDataStore$updateData$2 preferenceDataStore$updateData$2 = new PreferenceDataStore$updateData$2(this.f112485c, eVar);
+        preferenceDataStore$updateData$2.f112484b = obj;
+        return preferenceDataStore$updateData$2;
+    }
+
+    @Override // ed.p
+    @Nullable
+    /* JADX INFO: renamed from: e, reason: merged with bridge method [inline-methods] */
+    public final Object invoke(@NotNull a aVar, @Nullable e<? super a> eVar) {
+        return ((PreferenceDataStore$updateData$2) create(aVar, eVar)).invokeSuspend(L0.f217464a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) throws Throwable {
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+        int i10 = this.f112483a;
+        if (i10 == 0) {
+            C4885d0.n(obj);
+            a aVar = (a) this.f112484b;
+            p<a, e<? super a>, Object> pVar = this.f112485c;
+            this.f112483a = 1;
+            obj = pVar.invoke(aVar, this);
+            if (obj == coroutineSingletons) {
+                return coroutineSingletons;
+            }
+        } else {
+            if (i10 != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            C4885d0.n(obj);
+        }
+        a aVar2 = (a) obj;
+        ((MutablePreferences) aVar2).h();
+        return aVar2;
+    }
+}

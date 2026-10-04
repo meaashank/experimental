@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#1ea25a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accounts_add_action"/>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/accounts_add_desc"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_detail_more"
+        android:contentDescription="@null"
+        android:layout_marginStart="24dp"/>
+</LinearLayout>

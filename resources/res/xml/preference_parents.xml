@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/parental_controls">
+        <Preference
+            android:title="@string/block_sites"
+            android:key="siteblock"
+            android:singleLineTitle="false"/>
+        <Preference
+            android:title="@string/enter_password"
+            android:key="password"
+            android:singleLineTitle="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

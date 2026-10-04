@@ -1,0 +1,11 @@
+package com.google.android.gms.ads.mediation;
+
+import androidx.annotation.NonNull;
+import com.google.android.gms.ads.AdError;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface MediationInterstitialAdCallback extends MediationAdCallback {
+    void onAdFailedToShow(@NonNull AdError adError);
+
+    void onAdLeftApplication();
+}

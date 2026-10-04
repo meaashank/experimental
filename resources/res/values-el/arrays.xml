@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="password_set_array">
+        <item>Κανένας</item>
+        <item>Προσαρμοσμένο</item>
+    </array>
+    <array name="proxy_choices_array">
+        <item>Κανένας</item>
+        <item>Orbot</item>
+        <item>I2P</item>
+        <item>Χειροκίνητα</item>
+    </array>
+    <array name="suggestion_name_array">
+        <item>Τρεις</item>
+        <item>Τέσσερις</item>
+        <item>Πέντε</item>
+        <item>Έξι</item>
+        <item>Επτά</item>
+        <item>Οκτώ</item>
+    </array>
+    <array name="url_content_array">
+        <item>Τομέας (προεπιλογή)</item>
+        <item>URL</item>
+        <item>Τίτλος</item>
+    </array>
+</resources>

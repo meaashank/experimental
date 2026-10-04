@@ -1,0 +1,26 @@
+package com.google.android.exoplayer2.text.ttml;
+
+/* JADX INFO: loaded from: classes3.dex */
+final class TtmlRegion {
+
+    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    public final String f150751id;
+    public final float line;
+    public final int lineAnchor;
+    public final int lineType;
+    public final float position;
+    public final float width;
+
+    public TtmlRegion(String str) {
+        this(str, Float.MIN_VALUE, Float.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Float.MIN_VALUE);
+    }
+
+    public TtmlRegion(String str, float f10, float f11, int i10, int i11, float f12) {
+        this.f150751id = str;
+        this.position = f10;
+        this.line = f11;
+        this.lineType = i10;
+        this.lineAnchor = i11;
+        this.width = f12;
+    }
+}

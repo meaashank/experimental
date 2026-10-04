@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="badged_app_label">
+        <item quantity="one">%1$s, %2$d ta bildirishnoma bor</item>
+        <item quantity="other">%1$s, %2$d ta bildirishnoma bor</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ta yangi bildirishnoma</item>
+        <item quantity="other">%d ta yangi bildirishnoma</item>
+    </plurals>
+</resources>

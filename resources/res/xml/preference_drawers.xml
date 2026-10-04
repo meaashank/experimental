@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/drawer_settings">
+        <SwitchPreference
+            android:title="@string/tabs_in_drawer"
+            android:key="cb_drawertabs"
+            android:defaultValue="true"
+            android:singleLineTitle="false"/>
+        <SwitchPreference
+            android:title="@string/swap_bookmarks_and_tabs"
+            android:key="cb_swapdrawers"
+            android:defaultValue="true"
+            android:singleLineTitle="false"/>
+        <SwitchPreference
+            android:title="@string/stack_items_reverse"
+            android:key="stack_from_bottom"
+            android:defaultValue="false"
+            android:singleLineTitle="false"/>
+        <Preference
+            android:title="@string/drawer_lines"
+            android:key="drawer_lines"
+            android:singleLineTitle="false"/>
+        <Preference
+            android:title="@string/drawer_size"
+            android:key="drawer_size"
+            android:singleLineTitle="false"/>
+        <androidx.preference.Preference
+            android:title="@string/drawer_item_offset"
+            android:fragment="com.cookiegames.smartcookie.settings.fragment.DrawerOffsetFragment"
+            android:singleLineTitle="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
